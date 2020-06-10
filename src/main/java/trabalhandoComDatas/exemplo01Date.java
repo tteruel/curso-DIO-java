@@ -39,19 +39,19 @@ public class exemplo01Date {
 
 
         //Exemplo 04
-        System.out.println("Exemplo 03 ----- after e before");
+       /* System.out.println("Exemplo 03 ----- after e before");
         Date dataNoPassado = new Date(1513124807691L); //Tue Dec 12 22:26:47 BRST 2017
 
         Date dataNoFuturo = new Date(1613124807691L); //Fri Feb 12 08:13:27 BRST 2021
 
         Date mesmaDataNoFuturo = new Date(1613124807691L); //Fri Feb 12 08:13:27 BRST 2021
 
-        /** Comparando se as datas são iguais */
+        *//** Comparando se as datas são iguais *//*
         boolean isEquals = dataNoFuturo.equals(mesmaDataNoFuturo);
 
         System.out.println(isEquals); //true
 
-        /** Comparando uma data com a outra */
+        *//** Comparando uma data com a outra *//*
         int compareCase1 = dataNoPassado.compareTo(dataNoFuturo); //passado -> futuro
 
         int compareCase2 = dataNoFuturo.compareTo(dataNoPassado); //futuro -> passado
@@ -75,11 +75,26 @@ public class exemplo01Date {
         Instant instant = dataInicio.toInstant();
         System.out.println(instant);
         // 2017-12-13T00:26:47.691Z
-
+*/
         //Exercicio
-        /* Encontrar o timeMillis do dia em que nasci
-        * converter para um objeto Date
-        * Verifica se é anterior ou posterior a 15 de maio de 2010*/
+        /* Encontrar o timeMillis do dia em que nasci --> 624981600000
+        converter para um objeto Date
+        Verifica se é anterior ou posterior a 15 de maio de 2010*/
+
+
+        Date meuAniversario = new Date(624981600000L);
+        //21/10/1989 - 12 hrs
+
+        Date dataMaio = new Date(1273935600000L);
+        //10 de Maio de 2010 - meio dia
+
+
+        if(meuAniversario.after(dataMaio)){
+            System.out.println("Você nasceu depois de 10 de Maio de 2010!!");
+        }else{
+            System.out.println("Você nasceu antes de 10 de Maio de 2010!!");
+        }
+
 
     }
 }
