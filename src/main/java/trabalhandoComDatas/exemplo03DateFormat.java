@@ -28,9 +28,14 @@ public class exemplo03DateFormat {
         System.out.println(dataFormatada);
         // 14/07/2019
 
-
         //Converter a Data atual para o formato DD/MM/YYYY HH:MM:SS:MMMM
+        // SimpleDateFormat formatador = new SimpleDateFormat("DD/MM/YYYY HH:MM:SS:MMM");
+        // retorna 163/06/2020 19:06:239:jun
+        //link for reference - https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+        SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss:SSS z");
+        String formatExercicio =  formatador.format(agora);
+        System.out.println(formatExercicio);
 
-        
+
     }
 }
