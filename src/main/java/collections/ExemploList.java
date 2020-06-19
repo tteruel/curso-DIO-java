@@ -14,6 +14,9 @@ public class ExemploList {
         nomes.add("Wesley");
         nomes.add("Cleber");
         System.out.println(nomes);
+        nomes.addAll(nomes);
+        System.out.println(nomes);
+
 
         Collections.sort(nomes);
         nomes.set(1, "Juliana");
@@ -43,6 +46,7 @@ public class ExemploList {
         Iterator<String> iterator = nomes.iterator();
         while (iterator.hasNext()){
             System.out.println("iterator: "+ iterator.next());
+
         }
 
 
